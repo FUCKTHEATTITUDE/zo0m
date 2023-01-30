@@ -13,11 +13,10 @@ from os import execl
 from sys import executable
 from bot import updater, dp, browser, restricted
 
-from bot.meet import meet
+
 from bot.zoom import zoom
 
 if Config.SCHEDULE == True:
-    from bot.meet_schedule import mJobQueue, timeTable
     from bot.zoom_schedule import zJobQueue
 
 userId = Config.USERID
